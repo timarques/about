@@ -1,0 +1,336 @@
+{
+    "en": {
+        "menu": {
+            "items": {
+                "home": {
+                    "icon": "fa-home",
+                    "text": "Home",
+                    "name": "home"
+                },
+                "about": {
+                    "icon": "fa-user",
+                    "text": "About Me",
+                    "name": "about"
+                },
+                "skills": {
+                    "icon": "fa-laptop",
+                    "text": "Skills",
+                    "name": "skills"
+                },
+                "projects": {
+                    "icon": "fa-briefcase",
+                    "text": "Projects",
+                    "name": "projects"
+                }
+            }
+        },
+        "sections": {
+            "home": {
+                "title": "Home",
+                "name": "Tiago Marques",
+                "job": "WebDeveloper",
+                "links": [{
+                        "text": "Facebook",
+                        "href": "/facebook",
+                        "icon": "fa-facebook"
+                    },
+                    {
+                        "text": "Google Plus",
+                        "href": "/google-plus",
+                        "icon": "fa-google-plus"
+                    },
+                    {
+                        "text": "Github",
+                        "href": "/github",
+                        "icon": "fa-github"
+                    },
+                    {
+                        "text": "Curriculum",
+                        "href": "/curriculum",
+                        "icon": "fa-file-text"
+                    }
+                ]
+            },
+            "about": {
+                "title": "About Me",
+                "image": "/myface.jpg",
+                "name": "Tiago Marques",
+                "fields": [{
+                        "name": "Full Name",
+                        "content": "Tiago Alexandre Tavares Marques"
+                    },
+                    {
+                        "name": "Age",
+                        "content": 21
+                    },
+                    {
+                        "name": "Citizenship",
+                        "content": "Portuguese"
+                    },
+                    {
+                        "name": "Phone",
+                        "content": 916280314
+                    },
+                    {
+                        "name": "Email",
+                        "content": "tyimarques@gmail.com"
+                    },
+                    {
+                        "name": "About",
+                        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    }
+                ]
+            },
+            "skills": {
+                "title": "Skills",
+                "skills": [{
+                        "title": "PHP",
+                        "icon": "php-plain",
+                        "value": 70
+                    },
+                    {
+                        "title": "JavaScript",
+                        "icon": "javascript-plain",
+                        "value": 60
+                    },
+                    {
+                        "title": "NodeJs",
+                        "icon": "nodejs-plain",
+                        "value": 70
+                    },
+                    {
+                        "title": "CSS",
+                        "icon": "css3-plain",
+                        "value": 90
+                    },
+                    {
+                        "title": "HTML",
+                        "icon": "html5-plain",
+                        "value": 90
+                    },
+                    {
+                        "title": "Linux",
+                        "icon": "linux-plain",
+                        "value": 40
+                    },
+                    {
+                        "title": "MySql",
+                        "icon": "mysql-plain",
+                        "value": 35
+                    },
+                    {
+                        "title": "JQuery",
+                        "icon": "jquery-plain",
+                        "value": 80
+                    },
+                    {
+                        "title": "BootStrap",
+                        "icon": "bootstrap-plain",
+                        "value": 70
+                    },
+                    {
+                        "title": "Express",
+                        "icon": "express-original",
+                        "value": 50
+                    },
+                    {
+                        "title": "Laravel",
+                        "icon": "laravel-plain",
+                        "value": 40
+                    },
+                    {
+                        "title": "WordPress",
+                        "icon": "wordpress-plain",
+                        "value": 60
+                    }
+                ]
+            },
+            "projects": {
+                "title": "Projects",
+                "projects": [{
+                        "title": "CanalTech - Random Shit",
+                        "href": "https://canaltech.com.br/",
+                        "image": "/canaltech.png"
+                    },
+                    {
+                        "title": "CanalTech - Random Shit",
+                        "href": "https://canaltech.com.br/",
+                        "image": "/canaltech.png"
+                    },
+                    {
+                        "title": "CanalTech - Random Shit",
+                        "href": "https://canaltech.com.br/",
+                        "image": "/canaltech.png"
+                    }
+                ]
+            }
+        }
+    },
+    "pt": {
+        "menu": {
+            "items": {
+                "home": {
+                    "icon": "fa-home",
+                    "text": "Inicio",
+                    "name": "home"
+                },
+                "about": {
+                    "icon": "fa-user",
+                    "text": "Sobre Mim",
+                    "name": "about"
+                },
+                "skills": {
+                    "icon": "fa-laptop",
+                    "text": "Habilidades",
+                    "name": "skills"
+                },
+                "projects": {
+                    "icon": "fa-briefcase",
+                    "text": "Projectos",
+                    "name": "projects"
+                }
+            }
+        },
+        "sections": {
+            "home": {
+                "title": "Inicio",
+                "name": "Tiago Marques",
+                "job": "WebDeveloper",
+                "links": [{
+                        "text": "Facebook",
+                        "href": "/facebook",
+                        "icon": "fa-facebook"
+                    },
+                    {
+                        "text": "Google Plus",
+                        "href": "/google-plus",
+                        "icon": "fa-google-plus"
+                    },
+                    {
+                        "text": "Github",
+                        "href": "/github",
+                        "icon": "fa-github"
+                    },
+                    {
+                        "text": "Curriculum",
+                        "href": "/curriculum",
+                        "icon": "fa-file-text"
+                    }
+                ]
+            },
+            "about": {
+                "title": "Sobre Mim",
+                "image": "/myface.jpg",
+                "name": "Tiago Marques",
+                "fields": [{
+                        "name": "Nome Completo",
+                        "content": "Tiago Alexandre Tavares Marques"
+                    },
+                    {
+                        "name": "Idade",
+                        "content": 21
+                    },
+                    {
+                        "name": "Nacionalidade",
+                        "content": "Portuguese"
+                    },
+                    {
+                        "name": "Telemóvel",
+                        "content": 916280314
+                    },
+                    {
+                        "name": "Email",
+                        "content": "tyimarques@gmail.com"
+                    },
+                    {
+                        "name": "Sobre",
+                        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    }
+                ]
+            },
+            "skills": {
+                "title": "Habilidades",
+                "skills": [{
+                        "title": "PHP",
+                        "icon": "php-plain",
+                        "value": 70
+                    },
+                    {
+                        "title": "JavaScript",
+                        "icon": "javascript-plain",
+                        "value": 60
+                    },
+                    {
+                        "title": "NodeJs",
+                        "icon": "nodejs-plain",
+                        "value": 70
+                    },
+                    {
+                        "title": "CSS",
+                        "icon": "css3-plain",
+                        "value": 90
+                    },
+                    {
+                        "title": "HTML",
+                        "icon": "html5-plain",
+                        "value": 90
+                    },
+                    {
+                        "title": "Linux",
+                        "icon": "linux-plain",
+                        "value": 40
+                    },
+                    {
+                        "title": "MySql",
+                        "icon": "mysql-plain",
+                        "value": 35
+                    },
+                    {
+                        "title": "JQuery",
+                        "icon": "jquery-plain",
+                        "value": 80
+                    },
+                    {
+                        "title": "BootStrap",
+                        "icon": "bootstrap-plain",
+                        "value": 70
+                    },
+                    {
+                        "title": "Express",
+                        "icon": "express-original",
+                        "value": 50
+                    },
+                    {
+                        "title": "Laravel",
+                        "icon": "laravel-plain",
+                        "value": 40
+                    },
+                    {
+                        "title": "WordPress",
+                        "icon": "wordpress-plain",
+                        "value": 60
+                    }
+                ]
+            },
+            "projects": {
+                "title": "Projectos",
+                "projects": [{
+                        "title": "CanalTech - Random Shit",
+                        "href": "https://canaltech.com.br/",
+                        "image": "/canaltech.png"
+                    },
+                    {
+                        "title": "CanalTech - Random Shit",
+                        "href": "https://canaltech.com.br/",
+                        "image": "/canaltech.png"
+                    },
+                    {
+                        "title": "CanalTech - Random Shit",
+                        "href": "https://canaltech.com.br/",
+                        "image": "/canaltech.png"
+                    }
+                ]
+            }
+        }
+    }
+}
