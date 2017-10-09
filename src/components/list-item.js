@@ -6,11 +6,11 @@ class ListItem extends Component{
     }
     getActive()
     {
-        return (this.props.data.current == this.props.id ? "active":"")
+        return (this.props.data.current === this.props.id ? "active":"")
     }
     render(){
         return(
-            <li className={this.getActive()} onClick={()=>this.handleClick()}>
+            <li className={"list-group-item " + this.getActive()} onClick={()=>this.handleClick()}>
             	<i className={("fa "+this.props.data.icon)} aria-hidden="true"></i>
             	{this.props.data.text}
             </li>

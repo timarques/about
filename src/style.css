@@ -73,10 +73,6 @@ h2{
 #menu i{
     display: block!important;
 }
-@keyframes nextSection {
-    0%   {transform: translate(-100%)}
-    100% {transform: translate(-50%)}
-}
 section{
     padding: 2rem;
     height: 100vh;
@@ -84,16 +80,17 @@ section{
     position: absolute;
     left: 0;
     width: 100%;
-    animation-name: nextSection;
-    animation-timing-function: linear;
-    animation-duration: 0.5s;
 }
 .container-fluid{
     float: right;
-    width: calc(100% - 150px);
     height: 100vh;
     position: relative;
     padding: 0rem;
+}
+@media (min-width: 576px){
+    .container-fluid{
+        width: calc(100% - 150px);
+    }
 }
 #skills .skill{
     margin-bottom: 1rem;
@@ -152,12 +149,14 @@ section{
     border-radius: 0;
 }
 .list-group-item{
+    border: 0;
+    background-color: transparent!important;
+}
+#skills .list-group-item{
     position: relative;
     margin-left: 1rem;
-    border: 0;
-    background-color: transparent;
 }
-.list-group-item:before{
+#skills .list-group-item:before{
     content: "\f00c";
     font: normal normal normal 14px/1 FontAwesome;
     position: absolute;

@@ -25,8 +25,6 @@ class About extends Component{
                     </div>
                     <div className="col-lg-9">
                         <div className="list-group">{fields}</div>
-                        <hr />
-                        <div className="text">{this.props.data.text}</div>
                     </div>
                 </div>
             </div>

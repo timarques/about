@@ -12,10 +12,15 @@ class Header extends Component{
                 <ListItem id={key} key={key} data={{current: this.props.current.section, icon:item.icon, text: item.text}} handleClick={this.props.actions.menuListItemClick}></ListItem>
             )
 		})
+        if(this.props.dimensions.width > 576)
+        {
+            
+        }
         return(
             <header className="App-header">
-                <nav id="menu">
-                    <ul>
+                <button className="d-sm-none btn btn-dark m-1" onClick={()=>this.toggleMenu()}><i className="fa fa-bars" aria-hidden="true"></i></button>
+                <nav id="menu" className="d-none d-sm-block">
+                    <ul className="list-group">
                         <div className="menu-items">
                             {menuItems}
                         </div>

@@ -8,11 +8,7 @@ class App extends Component {
         super(props)
         this.data = this.props.data
         this.sectionIndex = 0
-        this.state = {section: "home", language: "en", data: null}
-    }
-    shouldComponentUpdate(nextProps, nextState)
-    {
-        return nextState.section !== this.state.section || nextState.language !== this.state.language
+        this.state = {section: "home", language: "en", data: null, dimensions:{width:null, height:null}}
     }
     detectSectionAndLanguage(callback){
         const location = window.location.hash.split("/")
@@ -48,17 +44,19 @@ class App extends Component {
             else if (yValue < 0 && this.sectionIndex > 0 && window.scrollY === 0)
                 this.changeSection(sectionsKeys[this.sectionIndex - 1])
         }
+        this.setState({dimensions:{height: window.outerHeight,width: window.outerWidth}})
         window.addEventListener("hashchange",()=>this.detectSectionAndLanguage(()=>{
             if(window.location.hash !== "#/"+this.state.language+"/"+this.state.section)
                 window.location.hash = "/"+this.state.language+"/"+this.state.section
         }))
         window.addEventListener("DOMMouseScroll", (event) => handleWindowScroll(event.detail))
         window.addEventListener("mousewheel", (event) => handleWindowScroll(event.deltaY))
+        window.addEventListener("resize", ()=>this.setState({dimensions:{height: window.outerHeight,width: window.outerWidth}}))
     }
     render() {
         return (
             <div className="App">
-                <Header current={{section:this.state.section, language:this.state.language}} data={{menu:this.data.menu}} actions={{menuListItemClick:this.changeSection.bind(this)}}></Header>
+                <Header current={{section:this.state.section, language:this.state.language, dimensions: this.state.dimensions}} data={{menu:this.data.menu}} actions={{menuListItemClick:this.changeSection.bind(this)}}></Header>
                 <Container section={this.state.section} data={this.state.data}></Container>
             </div>
         )
