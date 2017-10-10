@@ -12,7 +12,7 @@ class ListItem extends Component{
         return(
             <li className={"list-group-item " + this.getActive()} onClick={()=>this.handleClick()}>
             	<i className={("fa "+this.props.data.icon)} aria-hidden="true"></i>
-            	{this.props.data.text}
+            	<span>{this.props.data.text}</span>
             </li>
         )
     }

@@ -20,10 +20,10 @@ class About extends Component{
             <div className="row">
                 <h2>{this.props.data.title}</h2>
                 <div className="row col-12">
-                    <div className="col-lg-3" style={{marginBottom:"1rem"}}>
+                    <div className="col-lg-4 m-b-3">
                         <img className="img-fluid" alt={this.props.data.name} src={this.props.data.image} />
                     </div>
-                    <div className="col-lg-9">
+                    <div className="col-lg-8">
                         <div className="list-group">{fields}</div>
                     </div>
                 </div>
