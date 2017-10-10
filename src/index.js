@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './components/app'
-import './font-awesome.css'
+import './styles/font-awesome.css'
 import 'bootstrap-css-only'
-import 'devicon'
-import './style.css'
+import './styles/devicon.css'
+import './styles/style.css'
 import data from './data.json'
 import registerServiceWorker from './registerServiceWorker'
 

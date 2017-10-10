@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Home from './sections/home'
 import About from './sections/about'
 import Skills from './sections/skills'

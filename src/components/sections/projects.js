@@ -5,8 +5,9 @@ class Project extends Component{
 		return (
 			<div className="project col-lg-6">
 				<div className="body">
+					<img src={this.props.data.image} alt={this.props.data.title} />
 					<a href={this.props.data.href}><h4>{this.props.data.title}</h4></a>
-					<p>{this.props.data.text}</p>
+					{this.props.data.text}
 				</div>
 			</div>
 		)
