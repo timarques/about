@@ -29,6 +29,7 @@ class App extends Component {
     {
         this.detectSectionAndLanguage(()=>{
             window.location.hash = "/"+this.state.language+"/"+this.state.section
+            document.title ="Resume: "+ this.data.sections[this.state.section].title
         })
     }
     changeSection(section)
@@ -47,6 +48,7 @@ class App extends Component {
         window.addEventListener("hashchange",()=>this.detectSectionAndLanguage(()=>{
             if(window.location.hash !== "#/"+this.state.language+"/"+this.state.section)
                 window.location.hash = "/"+this.state.language+"/"+this.state.section
+            document.title ="Resume: "+ this.data.sections[this.state.section].title
         }))
         window.addEventListener("DOMMouseScroll", (event) => handleWindowScroll(event.detail))
         window.addEventListener("mousewheel", (event) => handleWindowScroll(event.deltaY))
