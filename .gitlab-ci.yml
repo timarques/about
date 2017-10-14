@@ -1,7 +1,7 @@
 pages:
   stage: deploy
   script:
-  - cp build/* public
+  - cp -r build/* public
   artifacts:
     paths:
     - public
