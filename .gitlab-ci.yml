@@ -1,8 +1,9 @@
 pages:
   stage: deploy
   script:
+  -
   artifacts:
     paths:
-    - build
+    - build/
   only:
   - master
