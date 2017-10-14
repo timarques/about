@@ -48,7 +48,7 @@
             },
             "about": {
                 "title": "About Me",
-                "image": "https://lh5.googleusercontent.com/J2oVoWKWDY4JBUEWSlCiN0UsC4CH8hSSuVbaMrxZswgWJC8R4JDkzx7OLXulyztkGcqA8-rUgVLGTo4",
+                "image": "https://tyimarques.gitlab.io/resume/myface.jpg",
                 "name": "Tiago Marques",
                 "fields": [{
                         "name": "Full Name",
@@ -198,7 +198,7 @@
             },
             "about": {
                 "title": "Sobre Mim",
-                "image": "https://lh5.googleusercontent.com/J2oVoWKWDY4JBUEWSlCiN0UsC4CH8hSSuVbaMrxZswgWJC8R4JDkzx7OLXulyztkGcqA8-rUgVLGTo4",
+                "image": "https://tyimarques.gitlab.io/resume/myface.jpg",
                 "name": "Tiago Marques",
                 "fields": [{
                         "name": "Nome Completo",
