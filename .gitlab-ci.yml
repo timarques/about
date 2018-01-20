@@ -1,22 +1,10 @@
 image: node:latest
-before_script:
-    - npm install
-stages:
-    - build
-    - deploy
-job1:
-    stage: build
-    script: 
-    - npm run build
-    only:
-    - master
-job2:
-    stage: deploy
+baseurl: ""
+pages:
     script:
-    - mkdir -p public
-    - cp -r build/* public
-    artifacts:
+      - npm install
+      - npm run buil
+      - cp -r build/* public
+      artifacts:
         paths:
         - public
-    only:
-    - master
