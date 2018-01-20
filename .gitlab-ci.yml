@@ -13,6 +13,10 @@ job1:
 job2:
     stage: deploy
     script:
+    - mkdir public
     - cp -r build/* public
+    artifacts:
+        paths:
+        - public
     only:
     - master
