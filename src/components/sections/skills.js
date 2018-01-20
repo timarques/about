@@ -6,14 +6,16 @@ class Skill extends Component{
             width: this.props.value + "%"
         }
 		return (
-            <div className="skill col-md-6 col-sm-12">
-                <div className="title">
-                    <i className={"devicon-"+this.props.icon}></i>{this.props.title}
-                </div>
-                <div className="progress">
-                    <div className="progress-bar" role="progressbar" aria-valuenow={this.props.value} aria-valuemin="0" aria-valuemax="100" style={style}></div>
-                </div>
-            </div>
+			<div className="skill col-xl-4 col-md-6 col-sm-12">
+	            <div className="inner">
+	                <div className="title">
+	                    <i className={"devicon-"+this.props.icon}></i>{this.props.title}
+	                </div>
+	                <div className="progress">
+	                    <div className="progress-bar" role="progressbar" aria-valuenow={this.props.value} aria-valuemin="0" aria-valuemax="100" style={style}></div>
+	                </div>
+	            </div>
+			</div>
 		)
 	}
 }
@@ -28,10 +30,8 @@ class Skills extends Component{
 		return (
             <div className="row">
 				<h2>{this.props.data.title}</h2>
-				<div className="row col-12">
-                	{skills}
-				</div>
-            </div>
+				<div className="row col-12">{skills}</div>
+        	</div>
 		)
 	}
 }

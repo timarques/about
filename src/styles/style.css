@@ -1,5 +1,6 @@
 body {
   color: #fff;
+  font-size: 20px;
   background-attachment: fixed;
   background-position: center center;
   background-image: url("../images/back.jpeg"); }
@@ -42,8 +43,8 @@ body {
   left: 0;
   bottom: 0;
   width: 150px;
-  background: rgba(0, 0, 0, 0.3);
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.25);
   z-index: 9; }
   #menu ul {
@@ -65,9 +66,11 @@ body {
         display: block !important; }
 
 .container-fluid {
-  float: right;
-  position: relative;
-  padding: 0rem; }
+  top: 0;
+  left: 150px;
+  right: 0;
+  bottom: 0;
+  position: absolute; }
   .container-fluid section {
     padding: 2rem;
     height: calc(100vh - 4rem);
@@ -90,6 +93,7 @@ body {
     .container-fluid section#skills .skill {
       padding: 0.5rem; }
       .container-fluid section#skills .skill .progress {
+        height: 0.5rem;
         border-radius: 0; }
         .container-fluid section#skills .skill .progress .progress-bar {
           background-color: #FF4136; }
@@ -99,7 +103,7 @@ body {
       padding: 1rem; }
       .container-fluid section#projects .project .body {
         padding: 0 1rem 1rem;
-        background: rgba(0, 0, 0, 0.5); }
+        background: rgba(0, 0, 0, 0.3); }
         .container-fluid section#projects .project .body img {
           width: calc(100% + 2rem);
           margin-left: -1rem; }
@@ -112,12 +116,6 @@ body {
     background-size: cover; }
     body .container-fluid {
       width: calc(100% - 150px); } }
-@media (min-width: 992px) {
-  #about .fields {
-    position: absolute;
-    top: 50%;
-    left: 33.33%;
-    transform: translate(0, -50%); } }
 @media (max-width: 576px) {
   .container-fluid {
     width: calc(100% - 75px); }

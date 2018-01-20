@@ -19,11 +19,8 @@ class About extends Component{
 		return (
             <div className="row">
                 <h2>{this.props.data.title}</h2>
-                <div className="info row col-12">
-                    <div className="col-md-4 m-b-3">
-                        <img className="img-fluid" alt={this.props.data.name} src={this.props.data.image} />
-                    </div>
-                    <div className="fields col-md-8">
+                <div className="info col-12">
+                    <div className="fields">
                         <div className="list-group">{fields}</div>
                     </div>
                 </div>
