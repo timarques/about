@@ -1,9 +1,18 @@
-pages:
-  stage: master
-  script:
-  - cp -r build/* public
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
+image: node:last
+before_script:
+    - npm install
+stages:
+    - build
+    - deploy
+job1:
+    stage: build
+    script: 
+    - npm run build
+    only:
+    - master
+job2:
+    stage: deploy
+    script:
+    - cp build/* public
+    only:
+    - master
