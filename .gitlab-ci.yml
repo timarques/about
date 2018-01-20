@@ -1,4 +1,4 @@
-image: node:last
+image: node:latest
 before_script:
     - npm install
 stages:
