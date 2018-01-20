@@ -1,9 +1,6 @@
-image: node:latest
 pages:
   stage: master
   script:
-  - npm install
-  - npm run build
   - cp -r build/* public
   artifacts:
     paths:
