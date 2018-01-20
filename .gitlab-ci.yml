@@ -1,5 +1,4 @@
 image: node:latest
-baseurl: ""
 pages:
     script:
     - npm install
