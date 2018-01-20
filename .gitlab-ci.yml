@@ -13,6 +13,6 @@ job1:
 job2:
     stage: deploy
     script:
-    - cp build/* public
+    - cp -r build/* public
     only:
     - master
